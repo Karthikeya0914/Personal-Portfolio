@@ -40,13 +40,30 @@ nav>a:hover {
   }
 
 /* intro */
+/* CSS for fade-in animation */
+@keyframes slide {
+    from {
+      transform: translateY(80%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply the animation to the element you want to animate */
+  #name {
+    animation: slide 2s ease-out;
+  }
+  
 #name{
     float: right;
     margin: 7%;
     align-items: right;
     font-size: 90px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition-timing-function: ease-out;
 }
+
 u{
     color: red;
 }
@@ -110,40 +127,92 @@ img{
     display: inline;
 }
 
-/* Experience
-#experience{
-    float: left;
-    justify-content: left;
-    font-size: 250%;
-    width: 40%;
-}
-.company{
-    float: right;
-    justify-content: right;
-    font-size: 180%;
-    width: 40%;
-}
+/* Experience*/
 .exp{
-    width: 90%;
+    display: flex;
+    font-size: 130%;
+    margin: 5%;
+    padding: 1% 1%;
+    line-height: 320%;
+}
+.accolade{
+    padding-left: 10%;
+    padding-right: 9%;
+    font-size: 30px;
+}
+.codsoft{
+    padding-left: 9%;
+    padding-right: 10%;
+    font-size: 30px;
+
+}
+h1{
+    text-align: center;
+    font-size: 90px;
+    text-decoration: underline;
 }
 
-/* Project */
-/* .proj{
-    width: 90%;
+/* projects */
+.proj{
+    text-align: center;
+    font-size: 90px;
+    text-decoration: none;
 }
-#project{
-    float: left;
-    justify-content: left;
-    font-size: 250%;
+.prj{
+    display: flex;
 }
-#discription{
-    float: right;
-    justify-content: right;
-    font-size: 150%;   
+figure {
+    text-align: center;
+  }
+  
+  figcaption {
+    text-align: center;
+    font-size: 50px;
+  }
+
+.img1{
+    width:40%;
+    height: 20%;
+}  
+.img2{
+    width:50%;
+}  
+.img3{
+    width:40%;
+}  
+.img3 img{
+    border-radius: 5%;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+   
 }
-#section6{
-    display: block;
-}  */ 
+
+.img2 img{
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img1 img{
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img1:hover{
+    width: 50% ;
+    height: 20%;
+    transition-duration: 1s;
+}
+.img2:hover{
+    width: 60% ;
+    transition-duration: 1s;
+}
+.img3:hover{
+    width: 50% ;
+    transition-duration: 1s;
+}
 
 /* logo */
 #jslogo{
@@ -184,8 +253,8 @@ img{
     margin-right: 25%;
     margin-top: 0%;
 
-}
 
+}
 /* Certifications */
 .cert{
     margin:10%;
@@ -214,13 +283,28 @@ img{
     justify-content: center;
     display: flex;
 }
-.btn{
-    background-color: dodgerblue;
-    border: #80715e;
+.button{
+    background-color: #aa3304; /* Green */
+    border: none;
     color: white;
-    padding-left: none;
-    padding-right: none;
-    cursor: pointer;
-    font-size: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+
+}
+#btn{
     align-items: center;
+    display: block;
+    /* padding: 20px; */
+    padding-left: 800px;
+    padding-right: 40px;
+    border-radius: 5%;
+    font-size: 90px;
+}
+#contact{
+    text-align: left;
+    font-size: 30px;
 }
